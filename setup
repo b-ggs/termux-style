@@ -35,7 +35,6 @@ cp -r $DIR/termux-style $PREFIX/share
 cd $PREFIX/share
 chmod +x termux-style/theme
 ln -s $PREFIX/share/termux-style/theme $PREFIX/bin/termux-style
-rm $PREFIX/share/data.tar.gz
 termux-reload-settings
 echo -e $G"   [*] Setup Completed."
 echo

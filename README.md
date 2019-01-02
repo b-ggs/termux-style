@@ -19,7 +19,6 @@ And Then, type...
 
 ```sh
 $ cd termux-style
-$ chmod +x setup
 $ ./setup
 ```
 And... Done, termux-style successfully installed in your termux.

@@ -31,11 +31,8 @@ if [ ! -d $HOME/.termux ]; then
 mkdir $HOME/.termux
 fi
 
-mv $DIR/data.tar.gz $PREFIX/share
+cp -r $DIR/termux-style $PREFIX/share
 cd $PREFIX/share
-echo -e $Y"   [*] Extracting Files..."$C
-echo
-tar -xhf data.tar.gz
 chmod +x termux-style/theme
 ln -s $PREFIX/share/termux-style/theme $PREFIX/bin/termux-style
 rm $PREFIX/share/data.tar.gz
@@ -47,4 +44,3 @@ echo -e $Y"   [*] Please Support The Developers By Purchasing The App."
 echo
 echo -e $G"   [*] Developed By$R Aditya Shakya."
 echo
-
